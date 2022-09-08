@@ -27,7 +27,7 @@ const Sidebar = () => {
         setNickname: `text-lg font-bold flex flex-1 items-center mt-[20px] mb-[20px] text-white`,
     }
     const isAuthenticated = true
-    const username = "hii"
+    const username = "bobb"
 /*     const {
         isAuthenticated,
         buyTokens,
