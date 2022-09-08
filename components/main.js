@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react'
-import { AmazonContext } from '../context/AmazonContext'
+import { AmazonContext } from '../context/amazonContext'
 
 import Cards from './Cards'
-import Featured from './Featured'
-import Header from './Header'
+// import Featured from './Featured'
+// import Header from './Header'
 
 const Main = () => {
     const styles = {
@@ -12,17 +12,17 @@ const Main = () => {
         recentTransactionsList: `flex flex-col`,
         transactionCard: `flex justify-between mb-[20px] p-[30px] bg-[#42667e] text-white rounded-xl shadow-xl font-bold gap-[20px] text-xl`,
     }
-    const { recentTransactions } = useContext(AmazonContext)
+    // const { recentTransactions } = useContext(AmazonContext)
 
     return (
         <div className={styles.container}>
-            <Header />
-            <Featured />
+            {/* <Header /> */}
+            {/* <Featured /> */}
             <Cards />
-            {recentTransactions.length > 0 && (
+            {/* {recentTransactions.length > 0 && (
                 <h1 className={styles.recentTitle}>Recent Transaction</h1>
-            )}
-            {recentTransactions &&
+            )} */}
+            {/* {recentTransactions &&
                 recentTransactions.map((transaction, index) => {
                     console.log(transaction)
                     return (
@@ -44,7 +44,7 @@ const Main = () => {
                             </div>
                         </div>
                     )
-                })}
+                })} */}
         </div>
     )
 }
