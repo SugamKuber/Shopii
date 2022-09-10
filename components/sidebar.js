@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { FaBox } from 'react-icons/fa'
 import { BsFillBookmarkFill } from 'react-icons/bs'
 import { BsFillPersonFill } from 'react-icons/bs'
-// import { AmazonContext } from '../context/AmazonContext'
+import { AmazonContext } from '../context/amazonContext'
 import { ConnectButton } from 'web3uikit'
 import { AiOutlineHistory } from 'react-icons/ai'
 import Link from 'next/link'
@@ -26,9 +26,14 @@ const Sidebar = () => {
         username: `flex items-center w-full justify-center`,
         setNickname: `text-lg font-bold flex flex-1 items-center mt-[20px] mb-[20px] text-white`,
     }
-    const isAuthenticated = true
+/*     const isAuthenticated = true
     const username = "bobb"
-/*     const {
+    const buyTokens = 123
+    const getBalance = 4323
+    const nickname = "hehe"
+    const handleSetUsername = "hboii"
+    const setNickname = "hahaa" */
+    const {
         isAuthenticated,
         buyTokens,
         getBalance,
@@ -37,7 +42,7 @@ const Sidebar = () => {
         username,
         handleSetUsername,
     } = useContext(AmazonContext)
- */
+
     return (
         <div className={styles.container}>
             <div className={styles.profile}>
