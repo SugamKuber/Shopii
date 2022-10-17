@@ -1,11 +1,15 @@
-import Sidebar from '../components/sidebar'
-import Main from "../components/main"
+import Main from '../components/Main';
+import Sidebar from '../components/Sidebar';
+
+const styles = {
+  container: `h-full w-full flex bg-[#fff]`,
+};
 
 export default function Home() {
   return (
-    <>
-      <Sidebar/>
-      <Main/>
-    </>
-  )
+    <div className={styles.container}>
+      <Sidebar />
+      <Main />
+    </div>
+  );
 }
